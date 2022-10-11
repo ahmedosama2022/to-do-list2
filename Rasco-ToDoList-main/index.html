@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rasco To-Do List</title>
+    <!-- link fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <!-- licnk css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- wep-icon -->
+    <link href="logo/svgexport-10.svg" rel="icon" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="backgrpund2"></div>
+    <div class="backgrpund"></div>
+    <header>
+      <img class="svg-logo" src="logo/svgexport-10.svg" alt="logo" />
+    </header>
+    <div class="form">
+      <input type="text" class="todo-input" placeholder="Type Your Task Here" />
+      <button class="todo-button">
+        <i class="fas fa-cloud-upload-alt"></i>
+      </button>
+      <!-- <div class="select">
+        <select name="todos" class="filter-todo">
+          <option value="all">All</option>
+          <option value="completed">Completed</option>
+          <option value="uncompleted">Uncompleted</option>
+        </select> -->
+      </div>
+    </div>
+    <div class="todo-continer">
+      <ul class="todo-list"></ul>
+    </div>
+    <div class="sounds">
+      <audio
+        class="sound-creat"
+        src="sound effect/Daruma.Bbx.05_01 new.mp3"
+      ></audio>
+
+      <audio class="sound-done" src="sound effect/dig_whoosh_02_01.mp3"></audio>
+      <audio
+        class="sound-delet"
+        src="sound effect/fast_whoosh_01_01.mp3"
+      ></audio>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

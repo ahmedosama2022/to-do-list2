@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    list-style: none;
+}
+
+body {
+    background-color: rgba(6, 10, 24, 0.933);
+    color: white;
+}
+
+/* scroll -------------------------------------------------------------------------------- */
+
+body::-webkit-scrollbar {
+    width: 1em;
+    background-color: rgba(35, 40, 56, 0.933);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #e7d6d6;
+}
+
+/* selection -------------------------------------------------------------------------------- */
+
+
+::selection {
+    background-color: #5a60775e;
+    border-radius: 5px;
+}
+
+/* BACKGROUND -------------------------------------------------------------------------------- */
+
+/* 
+ .backgrpund {
+    width: 760px;
+    height: 760px;
+    background-color: #ff1f3d;
+    position: fixed;
+    z-index: -5;
+    border-radius: 50%;
+    bottom: -229px;
+    left: -192px;
+} 
+
+ .backgrpund2 {
+    width: 1386px;
+    height: 1386px;
+    position: fixed;
+    z-index: -5;
+    border-radius: 50%;
+    top: -41px;
+    right: -525px;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ffffff47;
+    z-index: -4;
+}
+  */
+
+
+
+
+.backgrpund {
+    width: 760px;
+    height: 760px;
+    background-color: #ff1f3d;
+    position: fixed;
+    z-index: -5;
+    border-radius: 50%;
+    bottom: -477px;
+    left: -192px;
+}
+
+.backgrpund2 {
+    width: 819px;
+    height: 1386px;
+    position: fixed;
+    z-index: -5;
+    border-radius: 50%;
+    top: -41px;
+    right: -525px;
+    backdrop-filter: blur(10px);
+    border: 1px solid #ffffff47;
+    z-index: -4;
+}
+
+
+/* header -------------------------------------------------------------------------------- */
+
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    padding: 10px;
+}
+
+
+header img {
+    width: 70px;
+
+}
+
+header i {
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.247);
+}
+
+.todo-input {
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 100%;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 17px;
+    color: white;
+    border-radius: 5px;
+    background-color: rgb(58 66 88 / 62%);
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 19px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-button i {
+    color: rgb(18, 202, 172);
+    font-size: 40px;
+    margin-left: 5px;
+
+}
+
+.todo-item {
+    text-align: center;
+    line-height: 20px;
+
+}
+
+.todo-list {
+    width: 80%;
+    margin: 10px auto;
+
+}
+
+.todo {
+    background-color: rgba(0, 0, 0, 0.356);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    backdrop-filter: blur(5px);
+    transition: 0.5s;
+}
+
+.todo i {
+    color: white;
+    transition: 0.3s;
+
+}
+
+.todo i:hover {
+    transform: scale(1.1);
+}
+
+.fa-check-double:active {
+    color: #10f998;
+}
+
+.fa-trash:active {
+    color: #ff0000;
+}
+
+/* COMPLETE - DELETE -------------------------------------------------------------------------------- */
+
+
+.todo.completed {
+    opacity: 0.5;
+    transform: scale(0.9);
+}
+
+.green {
+    color: #10f998 !important;
+}
+
+
+
+.fall {
+    /* transform: translateY(8rem) rotate(20deg) !important; */
+    transform: scale(0.7)!important;
+    opacity: 0 !important;
+}
+
+/* SELECTEE */
+
+select {
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    backdrop-filter: blur(5px);
+    background-color: #2c3346e6;
+    cursor: pointer;
+    color: white;
+    padding: 5px;
+}
